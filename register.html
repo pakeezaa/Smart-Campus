@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | Smart Campus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="landing">
+  <header class="topnav" id="topnav"></header>
+  <main class="login">
+    <div class="card static" style="max-width:560px;margin-left:auto;margin-right:auto">
+      <span class="tile" data-icon="user" data-size="26"></span>
+      <h1>Create account</h1>
+      <p class="small" style="margin-top:6px">Register as a student or faculty member.</p>
+
+      <form id="registerForm" novalidate style="margin-top:20px">
+        <div class="chips">
+          <button type="button" class="chip active" data-role="student">Student</button>
+          <button type="button" class="chip" data-role="faculty">Faculty</button>
+        </div>
+
+        <div class="form" style="text-align:left">
+          <div>
+            <label for="regName">Full name</label>
+            <input id="regName" type="text" autocomplete="name" placeholder="Your full name" required>
+          </div>
+          <div>
+            <label for="regId" id="regIdLabel">Student ID</label>
+            <input id="regId" type="text" autocomplete="username" placeholder="e.g. 24CS01023" required>
+          </div>
+          <div class="full">
+            <label for="regEmail">Email address</label>
+            <input id="regEmail" type="email" autocomplete="email" placeholder="name@smartcampus.edu" required>
+          </div>
+          <div>
+            <label for="regDepartment">Department</label>
+            <input id="regDepartment" type="text" value="Computer Science" required>
+          </div>
+          <div>
+            <label for="regPassword">Password</label>
+            <input id="regPassword" type="password" autocomplete="new-password" placeholder="At least 6 characters"
+              required>
+          </div>
+          <div>
+            <label for="regConfirm">Confirm password</label>
+            <input id="regConfirm" type="password" autocomplete="new-password" placeholder="Re-enter password" required>
+          </div>
+        </div>
+
+        <p id="registerError" class="error" aria-live="polite" style="text-align:left;margin-top:10px"></p>
+        <button class="btn" type="submit" style="width:100%;margin-top:4px">Create account</button>
+      </form>
+
+      <p class="small" style="margin-top:16px">Already have an account?
+        <a href="login.html" style="color:var(--btn);font-weight:600">Sign in</a>
+      </p>
+    </div>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

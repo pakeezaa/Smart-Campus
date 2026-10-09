@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post Assignments | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="faculty">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1>Assignments</h1>
+                    <p>Post work for your students and track submissions.</p>
+                </div>
+                <form id="asgForm" class="card static form" novalidate>
+                    <div class="full"><label for="asgTitle">Title</label><input id="asgTitle" type="text"></div>
+                    <div><label for="asgCourse">Course</label><select id="asgCourse"></select></div>
+                    <div><label for="asgDue">Due Date</label><input id="asgDue" type="date"></div>
+                    <div><label for="asgTotal">Total Marks</label><input id="asgTotal" type="number" min="1" max="100"
+                            value="10"></div>
+                    <div class="full"><label for="asgDesc">Description</label><textarea id="asgDesc"></textarea></div>
+                    <div class="full"><label for="asgFile">Attachment (PDF or Word, optional)</label><input id="asgFile"
+                            type="file" accept=".pdf,.doc,.docx"></div>
+                    <div class="full"><small class="error" id="asgError" role="alert"></small><button class="btn"
+                            type="submit">Post Assignment</button></div>
+                </form>
+                <div class="sec-head" style="margin-top:32px">
+                    <h2>Posted Assignments</h2>
+                </div>
+                <div id="asgPosted" class="stack"></div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/faculty.js"></script>
+</body>
+
+</html>

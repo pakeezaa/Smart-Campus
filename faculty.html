@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Faculty Dashboard | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="faculty">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1 id="greeting"></h1>
+                    <p>Here's your teaching overview.</p>
+                </div>
+                <div id="facStats" class="stats"></div>
+                <div class="cols">
+                    <section>
+                        <div class="sec-head">
+                            <h2>Needs Grading</h2><a href="faculty-grading.html">Open grading</a>
+                        </div>
+                        <div id="gradeQueue" class="card static list"></div>
+                    </section>
+                    <section>
+                        <div class="sec-head">
+                            <h2>Quick Actions</h2>
+                        </div>
+                        <div class="card static list">
+                            <a class="row" href="faculty-assignments.html"><span class="tile" data-icon="plus"></span><b
+                                    class="grow">Post Assignment</b></a>
+                            <a class="row" href="faculty-grading.html"><span class="tile" data-icon="pencil"></span><b
+                                    class="grow">Grade Submissions</b></a>
+                            <a class="row" href="faculty-gradebook.html"><span class="tile" data-icon="chart"></span><b
+                                    class="grow">Gradebook</b></a>
+                        </div>
+                        <div class="sec-head" style="margin-top:24px">
+                            <h2>Upcoming Classes</h2>
+                        </div>
+                        <div id="facClasses" class="card static list"></div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/faculty.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile | SmartCampus Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<h1>Student registration / profile</h1>
+<form id="profileForm" novalidate>
+<div><label for="fullName">Full name</label><input id="fullName" type="text" placeholder=""><small class="error" id="fullNameError"></small></div>
+<div><label for="regNo">Registration number</label><input id="regNo" type="text" placeholder="2023-BSCS-014"><small class="error" id="regNoError"></small></div>
+<div><label for="email">University email</label><input id="email" type="email" placeholder="name@university.edu.pk"><small class="error" id="emailError"></small></div>
+<div><label for="department">Department</label><select id="department"><option value="">Select</option><option>Computer Science</option><option>Software Engineering</option><option>Electrical Engineering</option><option>Aerospace Engineering</option></select><small class="error" id="departmentError"></small></div>
+<div><label for="semester">Semester</label><select id="semester"><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select><small class="error" id="semesterError"></small></div>
+<div><label for="phone">Phone number</label><input id="phone" type="tel" placeholder="0300-1234567"><small class="error" id="phoneError"></small></div>
+<div><label for="password">Password</label><input id="password" type="password" placeholder=""><small class="error" id="passwordError"></small></div>
+<div><label for="confirm">Confirm password</label><input id="confirm" type="password" placeholder=""><small class="error" id="confirmError"></small></div>
+<button class="btn" type="submit">Save profile</button>
+</form>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

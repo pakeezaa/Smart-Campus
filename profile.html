@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="any">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1 id="profileTitle">My Profile</h1>
+                    <p id="profileSubtitle">View and update your account information.</p>
+                </div>
+                <div class="profile">
+                    <form id="profileForm" class="card static form" novalidate>
+                        <div><label for="fullName">Full Name *</label><input id="fullName" name="fullName" type="text"
+                                placeholder="Enter full name"><small class="error" id="fullNameError"></small></div>
+                        <div><label for="regNo">ID *</label><input id="regNo" name="regNo" type="text"
+                                placeholder="e.g. 24CS01023" readonly><small class="error" id="regNoError"></small>
+                        </div>
+                        <div><label for="email">Email Address *</label><input id="email" name="email" type="email"
+                                placeholder="name@university.edu.pk"><small class="error" id="emailError"></small></div>
+                        <div><label for="department">Department *</label><select id="department" name="department">
+                                <option value="">Select department</option>
+                                <option>Computer Science</option>
+                                <option>Software Engineering</option>
+                                <option>Electrical Engineering</option>
+                                <option>Aerospace Engineering</option>
+                            </select><small class="error" id="departmentError"></small></div>
+                        <div><label for="semester">Semester *</label><select id="semester" name="semester">
+                                <option value="">Select semester</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                            </select><small class="error" id="semesterError"></small></div>
+                        <div><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel"
+                                placeholder="03xx-xxxxxxx"><small class="error" id="phoneError"></small></div>
+                        <div><label for="password">New Password</label><input id="password" name="password"
+                                type="password" placeholder="Leave blank to keep current password"><small class="error"
+                                id="passwordError"></small></div>
+                        <div><label for="confirm">Confirm New Password</label><input id="confirm" name="confirm"
+                                type="password" placeholder="Re-enter new password"><small class="error"
+                                id="confirmError"></small></div>
+                        <div class="full"><button class="btn" style="width:100%" type="submit">Save Changes</button>
+                        </div>
+                    </form>
+                    <aside class="card side-card"><span class="avatar" data-icon="user" data-size="32"></span>
+                        <h3 id="profileName">Student Portal</h3><small id="profileNote">Complete your profile to get
+                            started.</small>
+                    </aside>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

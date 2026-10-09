@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Courses | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="any">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1 id="pageTitle">Courses</h1>
+                </div>
+                <div id="courseTabs" class="chips"></div>
+                <div class="toolbar">
+                    <label class="search" for="search" style="margin:0;flex:1;min-width:220px"><span data-icon="search"
+                            data-size="18"></span><input id="search" type="search"
+                            placeholder="Search courses..."></label>
+                    <select id="semester" aria-label="Semester" style="width:auto">
+                        <option value="all">All Semesters</option>
+                    </select>
+                    <select id="status" aria-label="Status" style="width:auto">
+                        <option value="all">All Status</option>
+                        <option>Ongoing</option>
+                        <option>Upcoming</option>
+                        <option>Completed</option>
+                    </select>
+                </div>
+                <div id="courseGrid" class="grid"></div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+
+</html>

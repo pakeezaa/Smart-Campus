@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grading | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="faculty">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1>Grade Submissions</h1>
+                    <p>Review student work, enter marks and leave feedback.</p>
+                </div>
+                <div class="toolbar"><select id="gradeAsg" aria-label="Assignment"
+                        style="width:auto;min-width:260px"></select></div>
+                <p id="gradeInfo" class="small" style="margin-bottom:12px"></p>
+                <div class="card static" style="padding:8px">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Student</th>
+                                <th>Status</th>
+                                <th>Work</th>
+                                <th>Marks</th>
+                                <th>Feedback</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="gradeBody"></tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/faculty.js"></script>
+</body>
+
+</html>

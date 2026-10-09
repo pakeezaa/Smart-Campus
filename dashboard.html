@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="student">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1 id="greeting"></h1>
+                    <p>Here's your academic overview.</p>
+                </div>
+                <div id="statGrid" class="stats"></div>
+                <div class="cols">
+                    <section>
+                        <div class="sec-head">
+                            <h2>Upcoming Classes</h2><a href="schedule.html">View all</a>
+                        </div>
+                        <div id="classList" class="card static list"></div>
+                    </section>
+                    <section>
+                        <div class="sec-head">
+                            <h2>Quick Links</h2>
+                        </div>
+                        <div class="card static list">
+                            <a class="row" href="courses.html"><span class="tile" data-icon="book"></span><b
+                                    class="grow">View Courses</b></a>
+                            <a class="row" href="schedule.html"><span class="tile" data-icon="calendar"></span><b
+                                    class="grow">Check Schedule</b></a>
+                            <a class="row" href="tasks.html"><span class="tile" data-icon="file"></span><b
+                                    class="grow">Assignment Manager</b></a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notices | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="app" data-role="any">
+    <div class="app">
+        <aside id="sidebar"></aside>
+        <div class="content">
+            <header class="topbar" id="topbar"></header>
+            <main>
+                <div class="page-head">
+                    <h1>Announcements</h1>
+                </div>
+                <form id="noticeForm" class="card static form" hidden style="margin-bottom:20px">
+                    <div class="full"><label for="noticeTitle">Notice title</label><input id="noticeTitle" type="text">
+                    </div>
+                    <div><label for="noticeCat">Category</label><select id="noticeCat">
+                            <option>Academic</option>
+                            <option>Examination</option>
+                            <option>Event</option>
+                            <option>General</option>
+                        </select></div>
+                    <div><label for="noticeDesc">Description</label><input id="noticeDesc" type="text"></div>
+                    <div class="full"><button class="btn" type="submit">Post Notice</button></div>
+                </form>
+                <div id="annFilters" class="chips"></div>
+                <div id="annList" class="card static list"></div>
+            </main>
+        </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

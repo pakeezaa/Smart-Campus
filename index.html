@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Smart Campus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-layout="landing">
+    <header class="topnav" id="topnav"></header>
+    <main class="wrap">
+        <section class="hero">
+            <h1>Your Campus,<br>In One Place</h1>
+            <p>Access your courses, schedule, assignments and more in one portal.</p><a class="btn"
+                href="login.html">Get Started</a>
+        </section>
+        <section class="block grid4">
+            <a class="card qcard" href="courses.html"><span class="tile" data-icon="book"></span>
+                <div>
+                    <h3>Courses</h3><small>Explore your courses</small>
+                </div>
+            </a>
+            <a class="card qcard" href="schedule.html"><span class="tile" data-icon="calendar"></span>
+                <div>
+                    <h3>Schedule</h3><small>View class timetable</small>
+                </div>
+            </a>
+            <a class="card qcard" href="assignments.html" data-fac="faculty-assignments.html"><span class="tile"
+                    data-icon="file"></span>
+                <div>
+                    <h3>Assignments</h3><small>Submit and track work</small>
+                </div>
+            </a>
+            <a class="card qcard" href="announcements.html"><span class="tile" data-icon="bell"></span>
+                <div>
+                    <h3>Notices</h3><small>Stay updated</small>
+                </div>
+            </a>
+        </section>
+        <section class="block" id="about">
+            <h2>Welcome to Smart Campus</h2>
+            <p class="small" style="margin-top:8px;max-width:60ch">One place for your academic life: check classes,
+                manage deadlines and stay on top of university news.</p>
+        </section>
+        <section class="block cols even">
+            <div>
+                <div class="sec-head">
+                    <h2>Latest Announcements</h2><a href="announcements.html">View all</a>
+                </div>
+                <div id="annList" class="card static list" data-limit="3"></div>
+            </div>
+            <div id="events">
+                <div class="sec-head">
+                    <h2>Upcoming Events</h2>
+                </div>
+                <div id="eventList" class="card static list"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-foot">
+        <div class="wrap foot-in"><a class="brand" href="index.html" style="margin:0"><svg class="ic" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10 12 5 2 10l10 5 10-5z" />
+                    <path d="M6 12v5c3 2 9 2 12 0v-5M22 10v6" />
+                </svg><span>Smart Campus</span></a>
+            <span>Learn · Grow · Succeed</span><span><a href="mailto:portal@university.edu.pk">Help</a><a
+                    href="#about">Privacy</a><a href="mailto:portal@university.edu.pk">Contact</a></span>
+        </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
